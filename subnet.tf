@@ -6,7 +6,7 @@ resource "aws_subnet" "swiggy-pub-sub-1" {
   map_public_ip_on_launch = "true"
 
   tags = {
-    Name = "swiggy-pub-sub-1"
+    Name = "swiggy-web-sub-1"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_subnet" "swiggy-pub-sub-2" {
   availability_zone       = "ap-south-1b"
   map_public_ip_on_launch = "true"
   tags = {
-    Name = "swiggy-pub-sub-2"
+    Name = "swiggy-web-sub-2"
   }
 }
 
@@ -28,7 +28,7 @@ resource "aws_subnet" "swiggy-pvt-sub-1" {
   availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = false
   tags = {
-    Name = "swiggy-pvt-sub-1"
+    Name = "swiggy-app-sub-1"
   }
 }
 resource "aws_subnet" "swiggy-pvt-sub-2" {
@@ -37,7 +37,7 @@ resource "aws_subnet" "swiggy-pvt-sub-2" {
   availability_zone       = "ap-south-1b"
   map_public_ip_on_launch = false
   tags = {
-    Name = "swiggy-pvt-sub-2"
+    Name = "swiggy-app-sub-2"
   }
 }
 
@@ -47,7 +47,7 @@ resource "aws_subnet" "swiggy-pvt-sub-3" {
   availability_zone       = "ap-south-1a"
   map_public_ip_on_launch = false
   tags = {
-    Name = "swiggy-pvt-sub-3"
+    Name = "swiggy-db-sub-3"
   }
 }
 resource "aws_subnet" "swiggy-pvt-sub-4" {
@@ -56,7 +56,7 @@ resource "aws_subnet" "swiggy-pvt-sub-4" {
   availability_zone       = "ap-south-1b"
   map_public_ip_on_launch = false
   tags = {
-    Name = "swiggy-pvt-sub-4"
+    Name = "swiggy-db-sub-4"
   }
 }
 
